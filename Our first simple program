@@ -1,1 +1,11 @@
-
+# Simple application that prints just output.
+print("Im learning python to become a good data scientist")
+# To run it just press on play sign or press on Shift+F10
+# We can print different types of data
+# 1.integers, numbers like ( 1,2,3,4,5 ...)
+print(1)
+print(2)
+# 2. float , like (1.02, 5.5, 4.0003). Those numbers have precision
+print(5.003)
+# 3. strings like (Hello, my name is Artur). It is basically any type of text
+print("Hello, my name is Artur")
