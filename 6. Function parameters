@@ -13,5 +13,8 @@ def days_to_units(days):
 # Our function doesn't have fixed numbers. All those numbers were defined as a variable
 # to execute a function we need to call a function with brackets ():
 days_to_units(30)
+days_to_units(90)
+days_to_units(180)
+days_to_units(300)
 
 # Note: Use descriptive naming of functions as it will help to understand its meaning easily
