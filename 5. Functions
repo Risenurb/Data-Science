@@ -7,7 +7,7 @@ def days_to_units(days):
     print(f"There are {days * calculation_to_units} {name_of_units} in {days} days")
 
 
-# to run a function we need to call a function with ()
+# to execute a function we need to call a function with brackets ():
 days_to_units(1)
 
 # Note: Use descriptive naming of functions as it will help to understand its meaning easily
