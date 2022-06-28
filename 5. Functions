@@ -1,0 +1,13 @@
+# The function is defined by using keyword def
+calculation_to_units = 24*60*60
+name_of_units = "seconds"
+
+
+def days_to_units(days):
+    print(f"There are {days * calculation_to_units} {name_of_units} in {days} days")
+
+
+# to run a function we need to call a function with ()
+days_to_units(1)
+
+# Note: Use descriptive naming of functions as it will help to understand its meaning easily
