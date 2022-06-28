@@ -1,0 +1,26 @@
+calculation_to_units = 24 * 60 * 60
+name_of_units = "seconds"
+
+
+def days_to_units(days):
+    print(f"There are {days * calculation_to_units} {name_of_units} in {days} days")
+
+
+days_to_units(30)
+days_to_units(90)
+days_to_units(180)
+days_to_units(300)
+
+
+# We can pass additional parameters into the function , for example
+
+
+def days_to_units(days, custom_message):
+    print(f"There are {days * calculation_to_units} {name_of_units} in {days} days")
+    print(custom_message)
+
+# A variable can be available from the inner region it was created.In this particular case variables days and
+# custom_message are created inside the function  days_to_units(), and they can be accessed only within that function.
+# This called internal scope
+# and on other hand variables calculation_to_units ,name_of_units are considered global
+# variables and can be accessed within the global scope
