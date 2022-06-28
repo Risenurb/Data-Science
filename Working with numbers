@@ -1,0 +1,11 @@
+# Simple calculation of how many minutes are in a year
+# 365 days in a year, 24 hours in a day , 60 minutes in an hour
+print(365 * 24 * 60)
+
+# result will be shown as 525600 minutes adding description using string concatenation or adding strings together. In
+# this case need to change result of multiplication from integer to string.
+print("There are" + " " + str(365 * 24 * 60) + " " + "minutes in a year")
+
+# we can use more elegant syntax for showing the result by using f string which is available in new versions  of
+# python starting from 3
+print(f"There are {365*24*60} minutes in a year")
