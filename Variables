@@ -1,0 +1,16 @@
+# Simple calculation of how many minutes are in a year, 180 days, 30 days
+# 365 days in a year, 24 hours in a day , 60 minutes in an hour
+print(365 * 24 * 60)
+print(180 * 24 * 60)
+print(30 * 24 * 60)
+print(f"There are {365 * 24 * 60} minutes in a year")
+print(f"There are {180 * 24 * 60} minutes in 180 days")
+print(f"There are {30 * 24 * 60} minutes in 30 days")
+# if we want to know how many second in a year, 180 days , 30 days we will need to make changes in every line written
+# above. To avoid it, we create variables
+calculation_to_units = 24 * 60 * 60
+name_of_units = "seconds"
+print(f"There are {365 * calculation_to_units} {name_of_units} in a year")
+print(f"There are {180 * calculation_to_units} {name_of_units} in 180 days")
+print(f"There are {30 * calculation_to_units} {name_of_units} in 30 days")
+# Note: Use descriptive naming of variables as it will help to understand its meaning easily
