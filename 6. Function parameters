@@ -17,4 +17,15 @@ days_to_units(90)
 days_to_units(180)
 days_to_units(300)
 
+
+# We can pass additional parameters into the function , for example
+
+
+def days_to_units(days, custom_message):
+    print(f"There are {days * calculation_to_units} {name_of_units} in {days} days")
+    print(custom_message)
+
+
+# execute function
+days_to_units(300, "Thank you!")
 # Note: Use descriptive naming of functions as it will help to understand its meaning easily
