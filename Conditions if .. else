@@ -1,0 +1,29 @@
+# To avoid repeating same logic over again, we need to use functions
+# The function is defined by using keyword def
+calculation_to_units = 24
+name_of_units = "hours"
+
+
+# Function can take parameters/arguments. In a print function we need to change values 20 to something else if we
+# need to change number of days. We can create a variable that corresponds to days and pass it into the function as
+# an argument. Its important to validate if the user inputs valid values
+def days_to_units(days):
+    return f"There are {days * calculation_to_units} {name_of_units} in {days} days"
+
+
+def validate_execute():
+    if user_input.isdigit():
+        user_input_dig = int(user_input)
+        if user_input_dig > 0:
+            result = days_to_units(user_input_dig)
+            print(result)
+        elif user_input_dig == 0:
+            print(" You entered a 0, please enter positive number")
+    else:
+        print("Your input is not valid a number, dont ruin my program!")
+
+
+# To ask user for an input we need to use python built-in function
+user_input = input("Hello,please enter the number of days:\n")
+
+validate_execute()
