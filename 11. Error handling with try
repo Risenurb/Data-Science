@@ -27,7 +27,10 @@ def validate_execute():
         print("Your input is not valid a number, dont ruin my program!")
 
 
-while True:
+#The first time the program run user_input variable is not created , so we need to:
+user_input = ""
+# In order to be able to input over again every single time we enter value, we need to use while loop. We need as well to check for exit word while entering number
+while user_input.lower() != "exit":
     # To ask user for an input we need to use python built-in function
     user_input = input("Hello,please enter the number of days:\n")
 
