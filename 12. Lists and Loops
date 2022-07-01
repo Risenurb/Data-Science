@@ -30,6 +30,8 @@ def validate_execute():
 user_input = ""
 while user_input.lower() != "exit":
     # To ask user for an input we need to use python built-in function
-    user_input = input("Hello,please enter the number of days:\n")
-    for number_of_days in user_input.split():
+    user_input = input("Hello,please enter the number of days comma separated:\n")
+    print(type(user_input.split(",")))
+    print(user_input.split(","))
+    for number_of_days in user_input.split(","):
         validate_execute()
