@@ -1,0 +1,12 @@
+from Objects_and_classes import User
+
+app_user_one = User("xxx@gmail.com", "ttt", "abcd2", "mmm")
+app_user_two = User("xxx@gmail.com", "yyy", "abcd2", "mmm")
+# app_user_one.change_name_by_object(app_user_two)
+# app_user_one.change_name_by_string("ozlem")
+app_user_one.set_email_name_password_job_title("artur@gmail.com", "Artur", "Artur123", "Data Scientist")
+app_user_one.get_user_info()
+# app_user_one.set_job_title("Data Scientist trainer")
+# app_user_one.change_password("Artur123")
+print(app_user_one.name)
+print(app_user_one.current_job_title)
