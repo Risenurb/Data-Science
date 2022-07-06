@@ -1,0 +1,19 @@
+# In this particular case the guesser is computer 
+import random
+
+
+def computer_guess(x):
+    low = 1
+    high = x
+    feedback = ""
+    while feedback != "c":
+        comp_guess = random.randint(low, high)
+        feedback = input(f"Is {comp_guess} is too high(h), too low(h) or correct(c)?\n")
+        if feedback == "h":
+            high = comp_guess - 1
+        elif feedback == "l":
+            low = comp_guess + 1
+    print(" Congratulation, the guess is correct!")
+
+
+computer_guess(20)
