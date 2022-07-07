@@ -1,0 +1,23 @@
+def play():
+    user_choice = ""
+    computer_choice = ""
+    user_choice = input(" What's your choise ?Choose 's' for scissor, 'r' for rock and 'p' for paper\n")
+    computer_choice = random.choice(["s", "r", "p"])
+    print(computer_choice)
+    print(computer_choice)
+    if user_choice == computer_choice:
+        return "tie"
+    if you_won(user_choice, computer_choice):
+        return " You Won"
+    else:
+        return " You Lost"
+   
+
+
+def you_won(user_choice, computer_choice):
+    if (user_choice == "s" and computer_choice == "p") or (user_choice == "r" and computer_choice == "p") \
+            or (user_choice == "p" and computer_choice == "r") or (user_choice == "r" and computer_choice == "s"):
+        return True
+
+
+print(play())
